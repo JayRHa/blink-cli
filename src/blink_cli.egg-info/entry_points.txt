@@ -1,0 +1,2 @@
+[console_scripts]
+blink = blink_cli.cli:main

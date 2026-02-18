@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blink-cli"
+version = "0.1.0"
+description = "Production-ready CLI for Blink systems and cameras"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "blinkpy==0.25.5",
+  "aiohttp>=3.9,<4.0",
+]
+
+[project.scripts]
+blink = "blink_cli.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
