@@ -7,6 +7,7 @@ import asyncio
 import inspect
 import json
 import os
+import stat
 import sys
 from collections.abc import Mapping, Sequence
 from pathlib import Path
@@ -268,6 +269,25 @@ def _ensure_mapping(value: Any) -> Mapping[str, Any]:
     if isinstance(value, Mapping):
         return value
     return {}
+
+
+def _restrict_file_permissions(path: Path) -> None:
+    """Restrict a sensitive file to owner read/write only (0600).
+
+    The Blink auth JSON contains session tokens and (depending on the
+    blinkpy version) credential material. Persisting it with default
+    umask permissions can leave it world- or group-readable on shared
+    systems. On POSIX platforms we lock it down to 0600; on Windows
+    chmod is a no-op for these bits, so we silently skip.
+    """
+    if os.name != "posix":
+        return
+    try:
+        os.chmod(path, stat.S_IRUSR | stat.S_IWUSR)
+    except OSError:
+        # Best-effort: don't fail the command if the filesystem (e.g.
+        # FAT/exFAT) doesn't support POSIX permissions.
+        pass
 
 
 def _load_auth_data(args: argparse.Namespace) -> dict[str, Any]:
@@ -970,6 +990,11 @@ async def run_command(args: argparse.Namespace) -> dict[str, Any]:
                     [("save", (str(auth_path),), {})],
                     "Auth session save",
                 )
+                # The auth JSON contains session tokens / credential material
+                # and must not be world- or group-readable. blinkpy writes the
+                # file with the process umask, so lock it down explicitly.
+                if auth_path.exists():
+                    _restrict_file_permissions(auth_path)
                 return {
                     "command": args.command,
                     "location": location,
