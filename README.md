@@ -20,7 +20,7 @@ Build. Automate. Share.
 
 ## What is this?
 
-This repository provides cLI tool for controlling and monitoring Blink security cameras.
+CLI tool for controlling and monitoring Blink security cameras.
 
 > Browse the documentation below for setup notes, usage details, and project-specific context.
 
