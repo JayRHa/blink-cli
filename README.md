@@ -1,18 +1,3 @@
-<!-- repo-standard:start -->
-# Blink CLI
-
-CLI tool for controlling and monitoring Blink security cameras.
-
-| Area | Stack | Visibility |
-| --- | --- | --- |
-| CLI Tooling | Python | Public |
-
-**Repository:** `JayRHa/blink-cli`  
-**Topics:** `blink`, `cli`, `python`, `security-camera`, `smart-home`
-<!-- repo-standard:end -->
-
----
-
 <div align="center">
   <h1>Blink CLI</h1>
   <p><strong>Operate Blink systems and cameras from your terminal with clean JSON for automation.</strong></p>
