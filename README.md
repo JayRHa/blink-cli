@@ -1,34 +1,34 @@
 <!-- unified-readme:start -->
-    <div align="center">
+<div align="center">
 
-    # Blink CLI
+# Blink CLI
 
-    **CLI tool for controlling and monitoring Blink security cameras.**
+**CLI tool for controlling and monitoring Blink security cameras.**
 
-    Build. Automate. Share.
+Build. Automate. Share.
 
-    [![GitHub stars](https://img.shields.io/github/stars/JayRHa/BlinkCLI?style=for-the-badge&logo=github&color=f4c542)](https://github.com/JayRHa/BlinkCLI/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/JayRHa/BlinkCLI?style=for-the-badge&logo=github&color=f4c542)](https://github.com/JayRHa/BlinkCLI/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/JayRHa/BlinkCLI?style=for-the-badge&logo=github&color=4078c0)](https://github.com/JayRHa/BlinkCLI/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/JayRHa/BlinkCLI?style=for-the-badge&logo=github&color=d73a4a)](https://github.com/JayRHa/BlinkCLI/issues)
 [![Contributors](https://img.shields.io/github/contributors/JayRHa/BlinkCLI?style=for-the-badge&logo=github&color=28a745)](https://github.com/JayRHa/BlinkCLI/graphs/contributors)
 
-    ---
+---
 
-    `CLI Tool` | `Python` | `Public` | `Maintained`
+`CLI Tool` | `Python` | `Public` | `Maintained`
 
-    </div>
+</div>
 
-    ## What is this?
+## What is this?
 
-    This repository contains cLI tool for controlling and monitoring Blink security cameras.
+This repository provides cLI tool for controlling and monitoring Blink security cameras.
 
-    > Browse the documentation below for setup notes, usage details, and project-specific context.
+> Browse the documentation below for setup notes, usage details, and project-specific context.
 
-    ---
+---
 
-    ## Quick Start
+## Quick Start
 
-    1. Review the project documentation below.
+1. Review the project documentation below.
 2. Clone the repository:
 
    ```bash
@@ -37,9 +37,8 @@
 
 3. Follow the setup, deployment, or usage notes in the preserved documentation section.
 
-    ---
-    <!-- unified-readme:end -->
-
+---
+<!-- unified-readme:end -->
 
 ## Existing Documentation
 
