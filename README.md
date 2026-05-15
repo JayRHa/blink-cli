@@ -1,3 +1,48 @@
+<!-- unified-readme:start -->
+    <div align="center">
+
+    # Blink CLI
+
+    **CLI tool for controlling and monitoring Blink security cameras.**
+
+    Build. Automate. Share.
+
+    [![GitHub stars](https://img.shields.io/github/stars/JayRHa/BlinkCLI?style=for-the-badge&logo=github&color=f4c542)](https://github.com/JayRHa/BlinkCLI/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/JayRHa/BlinkCLI?style=for-the-badge&logo=github&color=4078c0)](https://github.com/JayRHa/BlinkCLI/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/JayRHa/BlinkCLI?style=for-the-badge&logo=github&color=d73a4a)](https://github.com/JayRHa/BlinkCLI/issues)
+[![Contributors](https://img.shields.io/github/contributors/JayRHa/BlinkCLI?style=for-the-badge&logo=github&color=28a745)](https://github.com/JayRHa/BlinkCLI/graphs/contributors)
+
+    ---
+
+    `CLI Tool` | `Python` | `Public` | `Maintained`
+
+    </div>
+
+    ## What is this?
+
+    This repository contains cLI tool for controlling and monitoring Blink security cameras.
+
+    > Browse the documentation below for setup notes, usage details, and project-specific context.
+
+    ---
+
+    ## Quick Start
+
+    1. Review the project documentation below.
+2. Clone the repository:
+
+   ```bash
+   git clone https://github.com/JayRHa/BlinkCLI.git
+   ```
+
+3. Follow the setup, deployment, or usage notes in the preserved documentation section.
+
+    ---
+    <!-- unified-readme:end -->
+
+
+## Existing Documentation
+
 <div align="center">
   <h1>Blink CLI</h1>
   <p><strong>Operate Blink systems and cameras from your terminal with clean JSON for automation.</strong></p>
