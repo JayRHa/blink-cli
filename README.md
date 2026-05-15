@@ -20,27 +20,46 @@ Build. Automate. Share.
 
 ## What is this?
 
-CLI tool for controlling and monitoring Blink security cameras.
+Blink CLI wraps a service or workflow in a command-line interface so common tasks can be automated from a terminal, shell script, or scheduled job.
 
-> Browse the documentation below for setup notes, usage details, and project-specific context.
+## Project Context
 
----
+- Primary stack: Python.
+- Typical usage starts with local configuration or credentials, then executes commands against the target service API.
+- This repository is maintained as a practical project and reference asset.
+
+## How It Works
+
+The CLI parses user input, loads configuration, calls the external service, normalizes the response, and prints script-friendly output.
+
+```mermaid
+flowchart LR
+    User[Terminal user] --> Command[CLI command]
+    Command --> Config[Configuration and credentials]
+    Config --> Client[API client]
+    Client --> Service[External service]
+    Service --> Parser[Response parser]
+    Parser --> Output[Terminal output]
+```
 
 ## Quick Start
 
-1. Review the project documentation below.
+1. Review the project context and workflow below.
 2. Clone the repository:
 
    ```bash
    git clone https://github.com/JayRHa/BlinkCLI.git
    ```
 
-3. Follow the setup, deployment, or usage notes in the preserved documentation section.
+3. Continue with the project-specific documentation in the next section.
 
 ---
 <!-- unified-readme:end -->
 
-## Existing Documentation
+<!-- project-documentation:start -->
+## Project Documentation
+
+The sections below contain the repository-specific setup, usage, and reference material for this project.
 
 <div align="center">
   <h1>Blink CLI</h1>
